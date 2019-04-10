@@ -1,24 +1,14 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Recipes
+* must be valid
+* name must be present
+* description must be present
+* chef_id must be present
+* Set max. size for name and description, maybe a minimum for description
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Chef
+* name must be present
+* email must be present
+* email must be valid
+* size restrictions as in recipes
+* email should be unique and case insensitive

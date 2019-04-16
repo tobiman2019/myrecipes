@@ -1,4 +1,4 @@
-<h1 align = "center">Recipes List</h1>
+<%= render 'shared/page_title', title: "Showing all our Naija Recipes" %>
 
 
 <% @recipes.each do |recipe| %>
@@ -9,9 +9,9 @@
     </section>
   </div>
   <div class = "col-md-8 bg-light">
-   <h3><%= recipe.name %></h3>
+   <h3><%= link_to recipe.name, recipe_path(recipe), class: "text-info" %></h3>
    <p><%= truncate(recipe.description, length:150) %></p>
-   <p><span class = "quiet"><small>Created: <%= time_ago_in_words(recipe.created_at) %></small></span></p>
+   <p><span class = "quiet"><small>Created: <%= time_ago_in_words(recipe.created_at) %>&nbspago by&nbsp<%= recipe.chef.chefname %></small></span></p>
    </div>
 </div>
 <% end %>

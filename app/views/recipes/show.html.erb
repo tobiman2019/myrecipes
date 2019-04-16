@@ -1,0 +1,6 @@
+<%= render 'shared/page_title', title: @recipe.name %>
+<p><%= simple_format(@recipe.description) %> </p>
+<p>
+  <small>Created by: <%= @recipe.chef.chefname %></small><br>
+  <small>Created: <%= time_ago_in_words(@recipe.created_at) %>&nbspago</small>
+</p>
